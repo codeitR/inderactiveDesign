@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="container navbar">
+        <span class="home_line_left line"></span>
+        <div class="navbar_content row flex">
+          <div class="logo_items flex">
+            <a href="index.html"><img src="images/logo.svg" alt="" class="logo_img" /></a>
+            <a href="index.html" class="header_icon home_icon gradient_bg">
+              <img src="images/home-icon.svg" alt="" />
+              <span>Home</span>
+            </a>
+            <a href="list_video_page.html" class="header_icon cart_icon gradient_bg">
+              <img src="images/cart-icon.svg" alt="" />
+              <span>Shop</span>
+            </a>
+          </div>
+
+          <!-- Menu Items -->
+          <ul class="menu_items flex">
+            <li class="item">
+              <a href="contact_us.html" class="link">Contact</a>
+            </li>
+            <li class="item">
+              <a href="about_us.html" class="link">About</a>
+            </li>
+            <li class="item">
+              <a href="signin.html" class="link">SignIn</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- About to Buy Section -->
+    <section class="section about_buy_section_2">
+      <div class="container about_buy_container">
+        <div class="row flex">
+          <div class="left_column">
+            <div class="about_buy_2_img flex">
+              <img src="images/about_buy_2_img.jpg" alt="about_buyImg" />
+              <span class="about_buy_2_data">
+                SweetHeart <br />$10,09 <br />
+                <br />
+                <button class="button">Remove</button>
+              </span>
+            </div>
+
+            <div class="about_buy_2_img flex">
+              <img src="images/about_buy_2_img_2.jpg" alt="about_buyImg" />
+              <span class="about_buy_2_data">
+                Batman <br />$10,02 <br />
+                <br />
+                <button class="button">Remove</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="right_column">
+            <form action="paid_page.html" class="payment_gateway_form">
+              <div class="input_field">
+                <label>Email</label>
+                <input type="text" required />
+              </div>
+              <div class="input_field card_info_input">
+                <label>Card Information</label>
+                <div>
+                  <img src="images/visa_img_2.jpg" alt="visa_img" />
+                  <img src="images/visa_img.jpg" alt="visa_img" />
+                  <input type="text" required />
+                </div>
+              </div>
+              <div class="input_field">
+                <label>Card Number</label>
+                <input type="text" required />
+              </div>
+              <div class="input_field cvc">
+                <label>CVC</label>
+                <input type="text" required />
+              </div>
+              <div class="input_field expire_date">
+                <label>Expire</label>
+                <input type="text" required />
+              </div>
+              <div class="input_field">
+                <label>Cardholder's Name</label>
+                <input type="text" required />
+              </div>
+              <div class="input_field country_region">
+                <label>Country or Region</label>
+                <input type="text" required />
+                <input type="text" required />
+                <input type="text" required />
+                <input type="text" required />
+              </div>
+
+              <div class="price_btn flex">
+                <h6>Total $20,11</h6>
+                <button class="button">Buy</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer footer_section">
+      <div class="footer_container container flex">
+        <div class="social_media">
+          <a href="#"><img src="images/youtube-icon.svg" alt="youtubeImg" /></a>
+          <a href="#"><img src="images/twitter-icon.svg" alt="twitterImg" /></a>
+          <a href="#"><img src="images/instagram-icon.svg" alt="instagrameImg" /></a>
+          <div>&copy;SquareEyes 2023-follow us in social media</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
