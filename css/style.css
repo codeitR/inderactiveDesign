@@ -241,6 +241,10 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.bi-cart2{
+  color: var(--white-color);
+}
+
 .home_icon:hover {
   background: linear-gradient(#f9f9f9 16%, #bd5f5f 100%);
 }
@@ -384,7 +388,7 @@ body {
 
 /* Footer Section */
 .footer_section {
-  margin-top: 550px;
+  margin-top:475px;
   padding: 15px 30px;
   background: conic-gradient(
     from -83.76deg at 50% 50%,
