@@ -241,8 +241,28 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+/* working on new cart */
 .bi-cart2{
   color: var(--white-color);
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 4px;
+
+}
+.cartAmount{
+    position: absolute;
+    font-size: 10px;
+    top:13px;
+    right: 12px;
+    margin: 5px 0 0 5px;
+    height: 20px;
+    background-color: red;
+    color:#fff;
+    padding: 3px;
+    border-radius: 2px;
 }
 
 .home_icon:hover {
