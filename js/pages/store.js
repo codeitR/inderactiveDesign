@@ -1,4 +1,5 @@
 const shop_display = document.getElementById("shop_display");
+const cartAmount = document.getElementById("cartAmount")
 
 const baseURL = "https://api.noroff.dev/api/v1/";
 const endpoint = "square-eyes";
@@ -51,6 +52,7 @@ const removeFromCart = (id) => {
 };
 
 const updateUI = (id) => {
+  updateCartNumber()
   if (basket.includes(id)) {
     return `
     <div onClick=removeFromCart('${id}') class="shopping_cart_btn button flex">
@@ -67,3 +69,8 @@ const updateUI = (id) => {
   }
 };
 
+const updateCartNumber = ()=>{
+  cartAmount.innerHTML = basket.length
+}
+
+updateCartNumber()

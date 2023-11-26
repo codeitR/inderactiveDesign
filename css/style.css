@@ -248,7 +248,7 @@ body {
 /* working on new cart ramesh */
 .bi-cart2{
   color: var(--white-color);
-  position: relative;
+  position: absolute;
   background-color: #fff;
   color: #212529;
   font-size: 14px;
@@ -259,7 +259,7 @@ body {
 .bi-list,
 .bi-x {
   color: white;
-  font-size: 16px;
+  font-size: 15px;
 }
 /* still playing */
 .movie-list-container {
@@ -366,10 +366,10 @@ body {
 
 
 .cartAmount{
-    position: absolute;
+    position: relative;
     font-size: 10px;
     top: -17px;
-    right: 12px;
+    right: -12px;
     margin: 5px 0 0 5px;
     height: 20px;
     background-color: red;
@@ -405,6 +405,7 @@ body {
 }
 .navbar_content {
   padding: 0 20px;
+  align-items: center;
   justify-content: space-between;
 }
 .menu_items {

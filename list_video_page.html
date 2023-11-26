@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>list_video_page</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/pages/store.js" defer></script>
-  <!-- Hotjar Tracking Code for https://interactivedi.netlify.app/ -->
-<!-- <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list_video_page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/pages/store.js" defer></script>
+    <script src="js/global.js" defer></script>
+    <!-- Hotjar Tracking Code for https://interactivedi.netlify.app/ -->
+    <!-- <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
       h._hjSettings={hjid:3744164,hjsv:6};
@@ -19,21 +19,22 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script> -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-/>
- 
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header class="header">
       <nav class="container navbar">
         <span class="home_line_left line"></span>
         <div class="navbar_content row flex">
           <div class="logo_items flex">
-            <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo_img" /></a>
+            <a href="index.html"
+              ><img src="images/logo.svg" alt="logo" class="logo_img"
+            /></a>
             <!-- <a href="index.html" class="header_icon home_icon gradient_bg">
               <img src="images/home-icon.svg" alt="home-icon" />
               <span>Home</span>
@@ -44,7 +45,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.c
             </a> -->
           </div>
           <!-- header ends here -->
-  
+
           <!-- Menu Items -->
           <ul class="menu_items flex">
             <li class="item">
@@ -53,7 +54,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.c
             <li class="item">
               <a href="list_video_page.html" class="link">Movies</a>
             </li>
-            
+
             <li class="item">
               <a href="contact_us.html" class="link">Contact</a>
             </li>
@@ -65,34 +66,38 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.c
             </li>
             <li class="item">
               <a href="cart.html"><i class="bi bi-cart2"></i></a>
-              <div class="cartAmount">0</div>
+              <div id="cartAmount" class="cartAmount">0</div>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-  <!-- Info & Video Cart Shopping Section -->
-  <section class="section video_shopping_section">
-    <div class="container">
-      <button class="button section_title gradient_bg"><span>Info & Video Shopping</span></button>
-      <div id="shop_display" class="video_shopping_container video_cards">
-
+    <!-- Info & Video Cart Shopping Section -->
+    <section class="section video_shopping_section">
+      <div class="container">
+        <button class="button section_title gradient_bg">
+          <span>Info & Video Shopping</span>
+        </button>
+        <div
+          id="shop_display"
+          class="video_shopping_container video_cards"
+        ></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer Section -->
-  <footer class="footer footer_section">
-    <div class="footer_container container flex">
-      <div class="social_media">
-        <a href="#"><img src="images/youtube-icon.svg" alt="youtubeImg" /></a>
-        <a href="#"><img src="images/twitter-icon.svg" alt="twitterImg" /></a>
-        <a href="#"><img src="images/instagram-icon.svg" alt="instagrameImg" /></a>
-        <div>&copy;SquareEyes 2023-follow us in social media</div>
+    <!-- Footer Section -->
+    <footer class="footer footer_section">
+      <div class="footer_container container flex">
+        <div class="social_media">
+          <a href="#"><img src="images/youtube-icon.svg" alt="youtubeImg" /></a>
+          <a href="#"><img src="images/twitter-icon.svg" alt="twitterImg" /></a>
+          <a href="#"
+            ><img src="images/instagram-icon.svg" alt="instagrameImg"
+          /></a>
+          <div>&copy;SquareEyes 2023-follow us in social media</div>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/pages/signin.js" defer></script>
     <!-- Hotjar Tracking Code for https://interactivedi.netlify.app/ -->
-   <script>
+    <!-- <script>
     (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
       h._hjSettings={hjid:3744164,hjsv:6};
@@ -16,21 +17,23 @@
       r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
       a.appendChild(r);
      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    </script> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
   </head>
   <body>
-      <!-- Header -->
-  <header class="header">
-    <nav class="container navbar">
-      <span class="home_line_left line"></span>
-      <div class="navbar_content row flex">
-        <div class="logo_items flex">
-          <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo_img" /></a>
-          <!-- <a href="index.html" class="header_icon home_icon gradient_bg">
+    <!-- Header -->
+    <header class="header">
+      <nav class="container navbar">
+        <span class="home_line_left line"></span>
+        <div class="navbar_content row flex">
+          <div class="logo_items flex">
+            <a href="index.html"
+              ><img src="images/logo.svg" alt="logo" class="logo_img"
+            /></a>
+            <!-- <a href="index.html" class="header_icon home_icon gradient_bg">
             <img src="images/home-icon.svg" alt="home-icon" />
             <span>Home</span>
           </a>
@@ -38,73 +41,106 @@
             <img src="images/cart-icon.svg" alt="cart icon" />
             <span>Shop</span>
           </a> -->
-        </div>
-        <!-- header ends here -->
+          </div>
+          <!-- header ends here -->
 
-        <!-- Menu Items -->
-        <ul class="menu_items flex">
-          <li class="item">
-            <a href="index.html" class="link">Home</a>
-          </li>
-          <li class="item">
-            <a href="list_video_page.html" class="link">Movies</a>
-          </li>
-          
-          <li class="item">
-            <a href="contact_us.html" class="link">Contact</a>
-          </li>
-          <li class="item">
-            <a href="about_us.html" class="link">About</a>
-          </li>
-          <li class="item">
-            <a href="signin.html" class="link">SignIn</a>
-          </li>
-          <li class="item">
-            <a href="cart.html"><i class="bi bi-cart2"></i></a>
-            <div class="cartAmount">0</div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+          <!-- Menu Items -->
+          <ul class="menu_items flex">
+            <li class="item">
+              <a href="index.html" class="link">Home</a>
+            </li>
+            <li class="item">
+              <a href="list_video_page.html" class="link">Movies</a>
+            </li>
+
+            <li class="item">
+              <a href="contact_us.html" class="link">Contact</a>
+            </li>
+            <li class="item">
+              <a href="about_us.html" class="link">About</a>
+            </li>
+            <li class="item">
+              <a href="signin.html" class="link">SignIn</a>
+            </li>
+            <li class="item">
+              <a href="cart.html"><i class="bi bi-cart2"></i></a>
+              <div class="cartAmount">0</div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- Login and Signup Form -->
     <section class="section form_section">
       <div class="form_container container">
         <div class="form_row row flex">
           <div class="form login_form gradient_bg">
-            <form action="personal.html">
+            <form id="signin_form_id">
               <header class="form_header">
                 <div href="#" class="header_icon user_icon gradient_bg">
                   <img src="images/user_icon.svg" alt="" />
                 </div>
                 <h6>Sign In</h6>
-                <p class="small_paragraph">Please enter your login and password!</p>
+                <p class="small_paragraph">
+                  Please enter your login and password!
+                </p>
               </header>
 
-              <input type="text" placeholder="Username" class="input_field" required />
-              <input type="password" placeholder="Password" class="input_field" required />
+              <input
+                id="signin_username"
+                type="text"
+                placeholder="Username"
+                class="input_field"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="input_field"
+              />
               <a href="#" class="forgot_pw_link">Forget your password!</a>
-              <button class="button">SignIn</button>
+              <button type="submit" class="button">SignIn</button>
             </form>
           </div>
-          <div class="form signup_form gradient_bg">
+          <!-- <div class="form signup_form gradient_bg">
             <form action="#">
               <header class="form_header">
                 <h6>Sign Up</h6>
                 <div class="media_icon flex">
-                  <a href="#"><img src="images/login_facebook_icon.svg" alt="" /></a>
-                  <a href="#"><img src="images/login_googlePlus_icon.svg" alt="" /></a>
-                  <a href="#"><img src="images/login_linkdin_icon.svg" alt="" /></a>
-                </div>
+                  <a href="#"
+                    ><img src="images/login_facebook_icon.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/login_googlePlus_icon.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="images/login_linkdin_icon.svg" alt=""
+                  /></a>
+                </div> -->
               </header>
 
-              <input type="text" placeholder="Name" class="input_field" required />
-              <input type="email" placeholder="Email" class="input_field" required />
-              <input type="password" placeholder="Password" class="input_field" required />
+              <!-- <input
+                type="text"
+                placeholder="Name"
+                class="input_field"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="input_field"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="input_field"
+                required
+              />
               <button class="button signup">Signup</button>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -112,12 +148,20 @@
     <!-- Coming Soon -->
     <section class="section coming_soon_videos coming_soon_videos_section">
       <div class="coming_soon_videos_container container">
-        <button class="button section_title gradient_bg"><span>Coming Soon Videos</span></button>
+        <button class="button section_title gradient_bg">
+          <span>Coming Soon Videos</span>
+        </button>
         <div class="coming_soon_img flex">
           <p>
-            Lee Zing is collabrating with new commers. SquareEye is servering a good trest for us at this Ester. We are waiting for this bluckbaster video.
+            Lee Zing is collabrating with new commers. SquareEye is servering a
+            good trest for us at this Ester. We are waiting for this bluckbaster
+            video.
             <a href="https://www.youtube.com/watch?v=EKA-h4VzIho">
-              <img src="images/play-button.svg" alt="play_btn" class="play_btn" />
+              <img
+                src="images/play-button.svg"
+                alt="play_btn"
+                class="play_btn"
+              />
             </a>
           </p>
         </div>
@@ -125,9 +169,15 @@
         <div class="row flex second_row">
           <div class="left_column">
             <p>
-              Family drama and comedy is what Leo looking through this lense probably. We will find out soon Leo Akjic video will be realise next week.
+              Family drama and comedy is what Leo looking through this lense
+              probably. We will find out soon Leo Akjic video will be realise
+              next week.
               <a href="https://www.youtube.com/watch?v=EKA-h4VzIho">
-                <img src="images/play-button.svg" alt="play_btn" class="play_btn signin_playbtn" />
+                <img
+                  src="images/play-button.svg"
+                  alt="play_btn"
+                  class="play_btn signin_playbtn"
+                />
               </a>
             </p>
           </div>
@@ -139,9 +189,15 @@
 
         <div class="coming_soon_img coming_soon_img_2 flex">
           <p>
-            Lee Zing is collabrating with new commers. SquareEye is servering a good trest for us at this Ester. We are waiting for this bluckbaster video.
+            Lee Zing is collabrating with new commers. SquareEye is servering a
+            good trest for us at this Ester. We are waiting for this bluckbaster
+            video.
             <a href="https://www.youtube.com/watch?v=EKA-h4VzIho">
-              <img src="images/play-button.svg" alt="play_btn" class="play_btn" />
+              <img
+                src="images/play-button.svg"
+                alt="play_btn"
+                class="play_btn"
+              />
             </a>
           </p>
         </div>
@@ -154,7 +210,9 @@
         <div class="social_media">
           <a href="#"><img src="images/youtube-icon.svg" alt="youtubeImg" /></a>
           <a href="#"><img src="images/twitter-icon.svg" alt="twitterImg" /></a>
-          <a href="#"><img src="images/instagram-icon.svg" alt="instagrameImg" /></a>
+          <a href="#"
+            ><img src="images/instagram-icon.svg" alt="instagrameImg"
+          /></a>
           <div>&copy;SquareEyes 2023-follow us in social media</div>
         </div>
       </div>

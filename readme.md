@@ -36,3 +36,11 @@ const displayBasket = () => {
 ## remove & add on both store & videoinfo page.
 
 ## cart page to see added movies and remove from cart.
+
+
+
+# responsiveness
+# functional cart
+# cart increment
+# overall design and typogr 
+# login 
