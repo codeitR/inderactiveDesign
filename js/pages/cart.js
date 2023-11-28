@@ -16,12 +16,12 @@ const displayBasket = () => {
    
 
     return (basketItems.innerHTML += `
-  <div class="">
+      <div class="">
           <img class="cart-image" src=${data?.image} alt="">
           <div class="title cart-title">${data?.title}</div>
           <button class="shopping_cart_btn button flex" onClick=removeFromCart('${data?.id}')>Remove</button>
       </div>
-  `);
+     `);
   });
 };
 
