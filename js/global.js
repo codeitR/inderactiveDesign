@@ -1,6 +1,7 @@
 let openBtn = document.querySelector(".bi-list")
 let closeBtn = document.querySelector(".bi-x")
 let menu = document.querySelector(".navbar_menu_items")
+
 let basket = JSON.parse(localStorage.getItem("basket")) || []; // array of strings
 
 const cartAmount = document.getElementById("cartAmount");
