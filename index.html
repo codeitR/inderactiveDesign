@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SquareEyes|Homepage</title>
+    <meta
+      name="description"
+      content="This is a content-creaters and short-movies creators site. To promote local creators."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/global.js" defer></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SquareEyes|Homepage</title>
-  <meta name="description" content="This is a content-creaters and short-movies creators site. To promote local creators.">
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/global.js" defer></script>
-
-  <!-- Hotjar Tracking Code for https://interactivedi.netlify.app/
+    <!-- Hotjar Tracking Code for https://interactivedi.netlify.app/
  <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -21,172 +23,195 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
  </script> -->
- <link
- rel="stylesheet"
- href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
 
-</head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="container navbar">
+        <span class="home_line_left line"></span>
+        <div class="navbar_content row flex">
+          <div
+            class="logo_items"
+            style="
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              align-items: center;
+            "
+          >
+            <a href="index.html"
+              ><img src="images/logo.svg" alt="logo" class="logo_img"
+            /></a>
 
+            <ul class="navbar_menu_items">
+              <li class="item">
+                <a href="index.html" class="link">Home</a>
+              </li>
+              <li class="item">
+                <a href="list_video_page.html" class="link">Movies</a>
+              </li>
 
-<body>
-  <!-- Header -->
-  <header class="header">
-    <nav class="container navbar">
-      <span class="home_line_left line"></span>
-      <div class="navbar_content row flex">
-        <div class="logo_items flex">
-          <a href="index.html"><img src="images/logo.svg" alt="logo" class="logo_img" /></a>
-          <!-- <a href="index.html" class="header_icon home_icon gradient_bg">
-            <img src="images/home-icon.svg" alt="home-icon" />
-            <span>Home</span>
-          </a>
-          <a href="list_video_page.html" class="header_icon cart_icon gradient_bg">
-            <img src="images/cart-icon.svg" alt="cart icon" />
-            <span>Shop</span>
-          </a> -->
-        </div>
-        <!-- header ends here -->
+              <li class="item">
+                <a href="contact_us.html" class="link">Contact</a>
+              </li>
+              <li class="item">
+                <a href="about_us.html" class="link">About</a>
+              </li>
+              <li class="item">
+                <a href="signin.html" class="link">SignIn</a>
+              </li>
+              <li class="item">
+                <a href="cart.html"><i class="bi bi-cart2"></i></a>
+                <div id="cartAmount" class="cartAmount">0</div>
+              </li>
+            </ul>
 
-        <!-- Menu Items -->
-     
-           <ul class="menu_items flex">
-            <li class="item">
-              <a href="index.html" class="link">Home</a>
-            </li>
-            <li class="item">
-              <a href="list_video_page.html" class="link">Movies</a>
-            </li>
-          
-            <li class="item">
-             <a href="contact_us.html" class="link">Contact</a>
-            </li>
-             <li class="item">
-               <a href="about_us.html" class="link">About</a>
-             </li>
-            <li class="item">
-             <a href="signin.html" class="link">SignIn</a>
-            </li>
-           <li class="item">
-             <a href="cart.html"><i class="bi bi-cart2"></i></a>
-             <div id="cartAmount" class="cartAmount">0</div>
-           </li>
-          </ul>
-          </div>
-          <!-- <div class="navbar__icons">
-            <i class="bi bi-list"></i>
-            <i class="bi bi-x hide"></i>
-        </div> -->
-        </div>
-      </div>
-     
-    </nav>
-  </header>
-
-  <!-- Home Section -->
-  <section class="section home">
-    <div class="home_container container">
-      <div class="row flex">
-        <div class="left_column">
-          <h6>Watch The Videos from around the world.</h6>
-          <br />
-          <p>As you wish, we bring the -local or Global video makers in one platform at your finger tips, Stream enjoy
-            and support the artist.</p>
-          <p class="offer">Get 3 months free for first Sign up</p>
-          <a href="signin.html" class="button">Sign Up</a>
-        </div>
-        <div class="right_column">
-          <div class="home_images">
-            <img src="images/home-img-2.jpg" alt="homeImg" class="home-img1" />
-            <img src="images/home-img-1.jpg" alt="homeImg" class="home-img2" />
+            <div class="navbar__icons">
+              <i class="bi bi-list"></i>
+              <i class="bi bi-x hide"></i>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </nav>
+    </header>
 
-  <div class="movie-list-container">
-    <h1 class="movie-list-title">New Movies</h1>
-    <div class="movie-list-wrapper">
+    <!-- Home Section -->
+    <section class="section home">
+      <div class="home_container container">
+        <div class="row flex">
+          <div class="left_column">
+            <h6>Watch The Videos from around the world.</h6>
+            <br />
+            <p>
+              As you wish, we bring the -local or Global video makers in one
+              platform at your finger tips, Stream enjoy and support the artist.
+            </p>
+            <p class="offer">Get 3 months free for first Sign up</p>
+            <a href="signin.html" class="button">Sign Up</a>
+          </div>
+          <div class="right_column">
+            <div class="home_images">
+              <img
+                src="images/home-img-2.jpg"
+                alt="homeImg"
+                class="home-img1"
+              />
+              <img
+                src="images/home-img-1.jpg"
+                alt="homeImg"
+                class="home-img2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="movie-list-container">
+      <h1 class="movie-list-title">New Movies</h1>
+      <div class="movie-list-wrapper">
         <div class="movie-list">
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="images/3.jpg" alt="">
-                <span class="movie-list-item-title">STROM</span>
-                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="images/13.jpg" alt="">
-                <span class="movie-list-item-title">1920</span>
-                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="images/17.jpg" alt="">
-                <span class="movie-list-item-title">Aqua</span>
-                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="images/19.jpg" alt="">
-                <span class="movie-list-item-title">SpinderWoman</span>
-                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="images/7.jpg" alt="">
-                <span class="movie-list-item-title">Avengers</span>
-                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                    hic fugit similique accusantium.</p>
-                <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="images/6.jpg" alt="">
-                <span class="movie-list-item-title">OKOkey</span>
-                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/7.jpg" alt="">
-                <span class="movie-list-item-title">FU</span>
-                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="movie-list-item-button">Watch</button>
-            </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="images/3.jpg" alt="" />
+            <span class="movie-list-item-title">STROM</span>
+            <p class="movie-list-item-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="images/13.jpg" alt="" />
+            <span class="movie-list-item-title">1920</span>
+            <p class="movie-list-item-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="images/17.jpg" alt="" />
+            <span class="movie-list-item-title">Aqua</span>
+            <p class="movie-list-item-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="images/19.jpg" alt="" />
+            <span class="movie-list-item-title">SpinderWoman</span>
+            <p class="movie-list-item-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="images/7.jpg" alt="" />
+            <span class="movie-list-item-title">Avengers</span>
+            <p class="movie-list-item-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
+              fugit similique accusantium.
+            </p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="images/6.jpg" alt="" />
+            <span class="movie-list-item-title">OKOkey</span>
+            <p class="movie-list-item-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="img/7.jpg" alt="" />
+            <span class="movie-list-item-title">FU</span>
+            <p class="movie-list-item-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="movie-list-item-button">Watch</button>
+          </div>
         </div>
         <i class="fas fa-chevron-right arrow"></i>
+      </div>
     </div>
-</div>
 
- <!-- Square Eyes Section -->
- <section class="section square_eyes">
-  <div class="container square_eyes_container">
-    <div class="square_eyes_row row flex">
-      <p>SquareEyes is a streaming service that offers a wide variety of award-videos, documentaries and more – on
-        thousands of internet-connected devices.You can watch as much as you want, whenever you want, without a single
-        advert – all for one low monthly price. There's always something new to discover, and we support the makers
-        for the vidoes.
-        <br>
-        <br>
-        <a href="list_video_page.html" class="button">Buy Movies</a>
-      </p>
-       
-    </div>
-  </div>
-</section>
-
+    <!-- Square Eyes Section -->
+    <section class="section square_eyes">
+      <div class="container square_eyes_container">
+        <div class="square_eyes_row row flex">
+          <p>
+            SquareEyes is a streaming service that offers a wide variety of
+            award-videos, documentaries and more – on thousands of
+            internet-connected devices.You can watch as much as you want,
+            whenever you want, without a single advert – all for one low monthly
+            price. There's always something new to discover, and we support the
+            makers for the vidoes.
+            <br />
+            <br />
+            <a href="list_video_page.html" class="button">Buy Movies</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Creator Section -->
     <section class="section creator_section">
       <div class="container creator_container">
-        <button class="button section_title gradient_bg"><span>Our Creators</span></button>
-  
+        <button class="button section_title gradient_bg">
+          <span>Our Creators</span>
+        </button>
+
         <div class="creator_row row flex">
           <div class="column flex">
             <div class="details">
               <p>
                 <b> Lee Zing,</b> <br />
-                She is very popular video contributor in our site, She creates social encomy and unbalance life work
-                vedios in funny way. Her vedio is watch by over 50million people so far.
+                She is very popular video contributor in our site, She creates
+                social encomy and unbalance life work vedios in funny way. Her
+                vedio is watch by over 50million people so far.
               </p>
               <a href="https://www.youtube.com/watch?v=iwVBz6HNK7E">
                 <img src="images/play-button.svg" alt="" class="play_btn" />
@@ -195,13 +220,17 @@
             <img src="images/creator-img-1.jpg" alt="" />
           </div>
         </div>
-  
+
         <div class="creator_row row flex">
           <div class="column flex">
             <div class="details">
-              <p>Donaldson (born May 7, 1990), better known as MrB, is an American video maker and social activities. He
-                is credited with pioneering a genre of funny fails video making that centres on expensive stunts.His
-                videos are watched and enjoyed by 130 million and up over.</p>
+              <p>
+                Donaldson (born May 7, 1990), better known as MrB, is an
+                American video maker and social activities. He is credited with
+                pioneering a genre of funny fails video making that centres on
+                expensive stunts.His videos are watched and enjoyed by 130
+                million and up over.
+              </p>
               <a href="https://www.youtube.com/watch?v=iwVBz6HNK7E">
                 <img src="images/play-button.svg" alt="" class="play_btn" />
               </a>
@@ -209,13 +238,17 @@
             <img src="images/creator-img-2.jpg" alt="" />
           </div>
         </div>
-  
+
         <div class="creator_row row flex">
           <div class="column flex">
             <div class="details">
-              <p>Donaldson (born May 7, 1990), better known as MrB, is an American video maker and social activities. He
-                is credited with pioneering a genre of funny fails video making that centres on expensive stunts.His
-                videos are watched and enjoyed by 130 million and up over.</p>
+              <p>
+                Donaldson (born May 7, 1990), better known as MrB, is an
+                American video maker and social activities. He is credited with
+                pioneering a genre of funny fails video making that centres on
+                expensive stunts.His videos are watched and enjoyed by 130
+                million and up over.
+              </p>
               <a href="https://www.youtube.com/watch?v=iwVBz6HNK7E">
                 <img src="images/play-button.svg" alt="" class="play_btn" />
               </a>
@@ -225,21 +258,19 @@
         </div>
       </div>
     </section>
-  
 
- 
-
-  <!-- Footer Section -->
-  <footer class="footer footer_section">
-    <div class="footer_container container flex">
-      <div class="social_media">
-        <a href="#"><img src="images/youtube-icon.svg" alt="youtubeImg" /></a>
-        <a href="#"><img src="images/twitter-icon.svg" alt="twitterImg" /></a>
-        <a href="#"><img src="images/instagram-icon.svg" alt="instagrameImg" /></a>
-        <div>&copy;SquareEyes 2023-follow us in social media</div>
+    <!-- Footer Section -->
+    <footer class="footer footer_section">
+      <div class="footer_container container flex">
+        <div class="social_media">
+          <a href="#"><img src="images/youtube-icon.svg" alt="youtubeImg" /></a>
+          <a href="#"><img src="images/twitter-icon.svg" alt="twitterImg" /></a>
+          <a href="#"
+            ><img src="images/instagram-icon.svg" alt="instagrameImg"
+          /></a>
+          <div>&copy;SquareEyes 2023-follow us in social media</div>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

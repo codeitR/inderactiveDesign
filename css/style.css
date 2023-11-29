@@ -1190,8 +1190,50 @@ img.signin_playbtn {
   }
 }
 
+.navbar_menu_items{
+  display: flex;
+  gap:10px;
+}
+
+.navbar__icons{
+  display: none;
+}
+
+.hide{
+  display: none;
+}
+
+.bi-list, .bi-x{
+  position: absolute; 
+  top: 10px;
+  right: 20px;
+  z-index: 200 !important;
+  font-size: 26px;
+  cursor: pointer;
+}
+
 /* Media Query below width 768px */
 @media (width < 768px) {
+
+.mobile-menu{
+  display: flex !important;
+  position: absolute;
+  background-color: #000;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .navbar__icons{
+    display: flex;
+  }
+  .navbar_menu_items{
+    display: none;
+  }
   /* Font size */
   .popular {
     margin-top: 50px;
