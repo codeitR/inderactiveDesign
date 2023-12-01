@@ -1,5 +1,7 @@
 const basketItems = document.getElementById("basketItems");
 
+const cartAmountID = document.getElementById("cartAmount");
+
 let basket = JSON.parse(localStorage.getItem("basket")) || []; // array of strings
 
 console.log(basket);
@@ -31,5 +33,6 @@ const removeFromCart = (id) => {
   basket = basket.filter((item) => item != id);
   localStorage.setItem("basket", JSON.stringify(basket));
   basketItems.innerHTML = "";
+  cartAmountID.innerHTML = basket.length
   displayBasket();
 };

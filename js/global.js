@@ -2,12 +2,12 @@ let openBtn = document.querySelector(".bi-list")
 let closeBtn = document.querySelector(".bi-x")
 let menu = document.querySelector(".navbar_menu_items")
 
-let basket = JSON.parse(localStorage.getItem("basket")) || []; // array of strings
+let basketGlobal = JSON.parse(localStorage.getItem("basket")) || []; // array of strings
 
 const cartAmount = document.getElementById("cartAmount");
 
 const updateCartNumber = () => {
-  cartAmount.innerHTML = basket.length;
+  cartAmount.innerHTML = basketGlobal.length;
 };
 
 updateCartNumber();

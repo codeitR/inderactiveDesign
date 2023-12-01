@@ -20,4 +20,5 @@ const displayMovies = async () => {
       
   `
   )
+  document.getElementById("dispalyMovies").innerHTML=html
 }
