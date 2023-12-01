@@ -69,6 +69,7 @@ const removeFromCart = (id) => {
 };
 
 const updateUI = (id) => {
+  
   if (basket.includes(id)) {
     return `
     <div onClick=removeFromCart('${id}') class="shopping_cart_btn button flex">
@@ -83,7 +84,10 @@ const updateUI = (id) => {
     </div>
     `;
   }
+
 };
+
+
 
 const displayError = (err) => {
   console.log(err);
