@@ -50,6 +50,7 @@ const displayResult = async () => {
   </div>`);
 };
 
+
 let basket = JSON.parse(localStorage.getItem("basket")) || []; // array of strings
 
 const addToCart = (item) => {
