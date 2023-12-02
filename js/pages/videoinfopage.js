@@ -53,6 +53,13 @@ const displayResult = async () => {
 
 let basket = JSON.parse(localStorage.getItem("basket")) || []; // array of strings
 
+
+const cartAmounts = document.getElementById("cartAmount");
+
+const updateCartNumbers = () => {
+  cartAmounts.innerHTML = basket.length;
+};
+
 const addToCart = (item) => {
   if (basket.includes(item)) return;
   else {
@@ -69,6 +76,7 @@ const removeFromCart = (id) => {
 };
 
 const updateUI = (id) => {
+  updateCartNumbers()
   
   if (basket.includes(id)) {
     return `
@@ -84,7 +92,6 @@ const updateUI = (id) => {
     </div>
     `;
   }
-
 };
 
 
