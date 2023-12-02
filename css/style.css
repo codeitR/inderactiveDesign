@@ -1071,7 +1071,7 @@ img.contact_us_img {
 .footer.about_buy {
   margin-top: 140px;
 }
-
+#signout_btn{ cursor: pointer;}
 /* About to Buy Second */
 .about_buy_2_img {
   display: flex;
@@ -1412,5 +1412,4 @@ img.signin_playbtn {
 /* style rules for the cart page are here */
 .cart-image{
   width:"300px !important";
-  height: "50px";
-}
+  height: "50px";}
