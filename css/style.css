@@ -138,7 +138,7 @@ body {
   font-size: var(--normal-font);
   color: var(--white-color);
   background: var(--blue-color);
-  margin-left: 50px;
+  margin: 10px;
 }
 
 /* Gradient Border */
