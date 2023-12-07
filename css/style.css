@@ -753,8 +753,9 @@ form {
   gap: 5px;
   padding: 9px 16px;
   font-size: var(--small-font);
-  border-radius: var(--border-radius-25);
+  border-radius: var(--border-radius-6);
   background: var(--blue-color-light);
+  /* background: transparent; */
 }
 .row a .add_to_cart_img {
   height: 25px;
@@ -763,7 +764,8 @@ form {
 }
 .info_btn {
   padding: 9px 35px;
-  background: var(--coffee-color-light);
+  /* background: var(--coffee-color-light); */
+  background: transparent;
   font-weight: var(--bold-font);
   transition: all 0.4s ease-in-out;
 }
