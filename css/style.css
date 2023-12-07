@@ -110,11 +110,11 @@ body {
 .line {
   position: absolute;
   height: 1px;
-  max-width: 500px;
+  max-width: -1px;
   width: 100%;
   border-radius: var(--border-radius-25);
   background-color: var(--coffee-color-light);
-  bottom: -50px;
+  bottom: -10px;
 }
 .home_line_left {
   left: 0;
@@ -208,7 +208,7 @@ body {
 .header {
   position: relative;
   padding: 50px 0;
-  top: 0;
+  top: -40;
   left: 0;
   width: 100%;
 }
@@ -1133,7 +1133,7 @@ img.signin_playbtn {
 /* Responsive */
 @media (max-width: 1200px) {
   .section {
-    padding: 40px 0px 40px 0px;
+    padding: 10px 0px 10px 0px;
   }
   .creator_section .row {
     justify-content: center;
